@@ -1,0 +1,8 @@
+logging:
+    pattern:
+        level: "%d{yyyy-MM-dd zzz HH:mm:ss} [%t] [tid=%X{traceId}] [sid=%X{spanId}] [%X{remoteAddress}] SEVERITY:$${severity:number} %-5level %class{36}#%method - %msg%n"
+
+management:
+    tracing:
+        sampling:
+            probability: 1.0
